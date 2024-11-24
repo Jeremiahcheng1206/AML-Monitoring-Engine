@@ -1,0 +1,20 @@
+<mapper namespace="com.chengyu.amlewsbdl.mapper.CustomerMapper">
+    <select id="selectAllCustomers" resultType="com.chengyu.amlewsbdl.domain.Customer">
+        SELECT * FROM customers;
+    </select>
+
+    <insert id="insertCustomer">
+        INSERT INTO customers (name, address, email, account_balance, phone_number)
+        VALUES (#{name}, #{address}, #{email}, #{accountBalance}, #{phoneNumber});
+    </insert>
+
+    <update id="updateCustomer">
+        UPDATE customers
+        SET name=#{name}, address=#{address}, email=#{email}, account_balance=#{accountBalance}, phone_number=#{phoneNumber}
+        WHERE customer_id=#{customerId};
+    </update>
+
+    <delete id="deleteCustomer">
+        DELETE FROM customers WHERE customer_id=#{customerId};
+    </delete>
+</mapper>

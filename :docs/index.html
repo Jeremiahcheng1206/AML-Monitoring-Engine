@@ -1,84 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AML Monitoring Engine</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        /* General Reset */
+        * {
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1, h2 {
+
+        body {
+            font-family: "Arial", sans-serif;
+            line-height: 1.6;
+            background: #f9f9f9;
             color: #333;
         }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(90deg, #007BFF, #00C6FF);
+            color: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Navigation Bar */
         nav {
             background: #333;
-            color: #fff;
-            padding: 10px;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
         }
+
         nav a {
-            color: #fff;
-            margin: 0 10px;
+            color: white;
             text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
+
         nav a:hover {
+            background: #007BFF;
+        }
+
+        /* Main Content */
+        main {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        main section {
+            margin-bottom: 3rem;
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        main section h2 {
+            color: #007BFF;
+            margin-bottom: 1rem;
+        }
+
+        main section p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        main section a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main section a:hover {
             text-decoration: underline;
         }
-        section {
-            margin-bottom: 20px;
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <h1>AML Monitoring Engine</h1>
+        <p>Welcome to the official documentation site for the AML Monitoring Engine</p>
+    </header>
+
+    <!-- Navigation Bar -->
     <nav>
         <a href="#overview">Overview</a>
         <a href="#architecture">System Architecture</a>
         <a href="#modules">Modules</a>
         <a href="#technologies">Technologies</a>
-        <a href="#interface">User Interface</a>
         <a href="#testing">Testing</a>
         <a href="#maintenance">Maintenance</a>
     </nav>
 
-    <h1>AML Monitoring Engine</h1>
-    <p>Welcome to the documentation for the AML Monitoring Engine, a deep learning-based system for anti-money laundering.</p>
+    <!-- Main Content -->
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>The AML Monitoring Engine is a cutting-edge system that leverages deep learning to detect and combat suspicious financial transactions. It enhances the accuracy and efficiency of anti-money laundering (AML) processes, providing robust tools for financial institutions to manage risks.</p>
+        </section>
 
-    <section id="overview">
-        <h2>Overview</h2>
-        <p>The AML Monitoring Engine leverages deep learning to detect and combat suspicious financial transactions.</p>
-    </section>
+        <section id="architecture">
+            <h2>System Architecture</h2>
+            <p>The system comprises six main components: Data Collection, Model Training, Real-Time Monitoring, Risk Assessment, Compliance, and Integration.</p>
+            <p>Each module works seamlessly to provide a comprehensive AML monitoring solution.</p>
+        </section>
 
-    <section id="architecture">
-        <h2>System Architecture</h2>
-        <p>Our system comprises six key components: Data Collection, Model Training, Real-Time Monitoring, Risk Assessment, Compliance, and Integration.</p>
-    </section>
+        <section id="modules">
+            <h2>Modules</h2>
+            <p><strong>Data Collection:</strong> Processes raw data from multiple financial systems.</p>
+            <p><strong>Feature Extraction:</strong> Identifies key patterns for training models.</p>
+            <p><strong>Model Training:</strong> Builds predictive deep learning models.</p>
+            <p><strong>Early Warning:</strong> Detects anomalies and provides decision support.</p>
+        </section>
 
-    <section id="modules">
-        <h2>Modules</h2>
-        <p>Explore detailed descriptions of each module, including their functionalities and designs.</p>
-    </section>
+        <section id="technologies">
+            <h2>Technologies</h2>
+            <p>We utilize advanced machine learning techniques, including:</p>
+            <ul>
+                <li>Convolutional Neural Networks (CNNs)</li>
+                <li>Recurrent Neural Networks (RNNs)</li>
+                <li>Deep Neural Networks (DNNs)</li>
+            </ul>
+        </section>
 
-    <section id="technologies">
-        <h2>Technologies</h2>
-        <p>We use cutting-edge deep learning algorithms, including CNNs and RNNs, for superior pattern recognition.</p>
-    </section>
+        <section id="testing">
+            <h2>Testing</h2>
+            <p>Our rigorous testing plan includes:</p>
+            <ul>
+                <li>Unit Testing</li>
+                <li>Integration Testing</li>
+                <li>System Functionality Testing</li>
+                <li>Performance and Security Testing</li>
+            </ul>
+        </section>
 
-    <section id="interface">
-        <h2>User Interface</h2>
-        <p>Our dashboards provide real-time insights and detailed transaction reports for enhanced usability.</p>
-    </section>
+        <section id="maintenance">
+            <h2>Maintenance</h2>
+            <p>Regular updates ensure the system remains compliant with regulations and optimizes performance over time.</p>
+        </section>
+    </main>
 
-    <section id="testing">
-        <h2>Testing</h2>
-        <p>Our system undergoes rigorous unit, integration, performance, and security testing to ensure reliability.</p>
-    </section>
-
-    <section id="maintenance">
-        <h2>Maintenance</h2>
-        <p>Regular updates ensure continued compliance with regulations and optimal system performance.</p>
-    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AML Monitoring Engine. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
 
