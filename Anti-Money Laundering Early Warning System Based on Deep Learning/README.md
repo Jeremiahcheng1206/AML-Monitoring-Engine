@@ -2,7 +2,7 @@
 
 ## Design Specification Manual  
 
-### Author: Cheng Yu  
+### Author: Yu Cheng
 
 ---
 
